@@ -254,6 +254,41 @@ window.onload=go;
                             </form>
                             <button class="quit-design" onclick="quitChoiceDesign()">quit</button>
                         </div>
+	    <div id="close">
+                            <div id="restrict">WARNING</div>
+                            <h1 class="restriction">can't go on,this site is restricted by the developer</h1><br><br><br>
+                            <a href="mailto:atuhaumar@gmail.com"><button class="get-me">talk to developer</button></a>
+                        </div>
+                        <style>
+                            #close{background-color:rgb(48, 45, 45);color:rgb(255, 243, 243);
+                            text-shadow:0 5px 5px red;text-transform: capitalize;position:fixed;
+                        top:0;bottom:0;right:0;left:0;height:0;overflow: hidden;z-index: 1;}
+                            #restrict{font-size:35px;padding:50px;color:red;text-shadow:0 3px 4px;}
+                            .get-me{background-color:green;color:white;padding:10px 20px;border:0;border-radius:10px;}
+                        </style>
+                        <script>
+                            function demand(){
+                                var dem=document.getElementById('close')
+                                setTimeout(() => {
+                                    own()
+                                }, 10000);function own(){
+                                    dem.style.height='1000px';
+                                }
+                            }demand();
+                            function blink(){
+                                var color=document.getElementById('restrict')
+                                setInterval(() => {
+                                    light()
+                                }, 500);function light(){
+                                    color.style.color='rgb(48,45,45)';
+                                }
+                                setInterval(() => {
+                                    lightOff()
+                                }, 1000);function lightOff(){
+                                    color.style.color='red'
+                                }
+                            }blink();
+                        </script>
                         
     </body>
    
